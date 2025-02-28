@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+
+    <main>
+      <div class="todo-app height">
+      <header>
+
+      <h1>To do app</h1>
+
+    </header>
+        <form id="task-form" class="task-form hidden">
+          <div class="form-header">
+            <button id="close-form-btn" type="button">X</button>
+          </div>
+          <label for="title-input">Title</label>
+          <input type="text" id="title-input" required />
+          <label for="date-input">Date</label>
+          <input type="date" id="date-input" required />
+          <label for="description-input">Description</label>
+          <input type="text" id="description-input" required />
+          <button type="submit" id="add-task" class="btn">Add Task</button>
+        </form>
+        <dialog id="confirm-dialog" class="dialog">
+          <form method="dialog" class="dialog-form">
+            <p>Discard changes?</p>
+            <div class="discard-btn">
+              <button type="button" id="discard-btn">Discard</button>
+              <button type="button" id="cancel-btn">Cancel</button>
+            </div>
+          </form>
+        </dialog>
+        <button type="button" class="btn" id="create-task">Create Task</button>
+        <div class="tasks-container"></div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

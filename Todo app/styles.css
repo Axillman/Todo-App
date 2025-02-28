@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    background-color: rgb(3, 3, 44);
+}
+
+header {
+    background-color: blueviolet;
+    width: 100%;
+    text-align: center;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    border-bottom: 1px solid rgb(234, 227, 227);
+    width: 60%;
+    margin: 0;
+}
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: brown;
+    height: fit-content;
+}
+
+.btn {
+    background-color: rgb(247, 204, 125);
+    border: 0;
+    width: 300px;
+    height: 35px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.task-form {
+    background-color: rgba(113, 16, 35, 0.123);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    min-height: 100vh;
+    width: 60%;
+    margin: 50px auto 0;
+}
+
+label {
+    color: white;
+}
+
+#title-input,
+#date-input,
+#description-input {
+    height: 40px;
+    margin: 0 0 15px;
+    background-color: white;
+    border: 0;
+    width: 100%;
+}
+
+#description-input {
+    height: 80px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#close-form-btn {
+    color: red;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#add-task {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.dialog {
+    top: -200px;
+    background-color: darkslategrey;
+    width: 200px;
+    color: white;
+    border: 0;
+}
+
+.discard-cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks-container {
+    color: white;
+
+    width: 60%;
+    padding: 0 10px 10px 10px;
+    height: 100%;
+    overflow-y: auto;
+    font-size: large;
+}
+
+.tasks-container > .idk {
+    margin: 0 0 10px;
+    border-bottom: 10px solid white;
+    padding-bottom: 12px;
+}
+
+.tasks-container > .idk > p {
+    border-bottom: 0.5px solid #cfcfcf;
+}
+
+.tasks-container > .idk > button {
+    background-color: rgb(247, 204, 125);
+    width: 100px;
+}
